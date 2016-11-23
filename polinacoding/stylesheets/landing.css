@@ -1,7 +1,11 @@
 body.landing.bg {
-  background-image: url(../images/index_mockup.png);
-  background-repeat: no-repeat;
-  background-position: top center;
+    background-image: url(../images/index_mockup.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+body.landing * {
+  transition: all .3s ease;
 }
 
 .landingWrapper {
@@ -23,13 +27,13 @@ body.landing.bg {
   overflow: hidden;
 }
 
-.mainSection h2 {
+.mainSection  h2 {
   font-family: 'PT Sans Caption', sans-serif;
   font-size: 36px;
   line-height: 46px;
 }
 
-.mainSection p {
+.mainSection  p {
   margin-top: 21px;
   font-size: 26px;
   line-height: 38px;
@@ -39,17 +43,18 @@ body.landing.bg {
   text-align: center;
 }
 
-.mainSection.center h2 {
+.mainSection.center h2{
   font-size: 40px;
   line-height: 52px;
 }
 
-.mainSection.center p {
+.mainSection.center  p {
   margin-top: 27px;
 }
 
 .mainSection.center section {
   width: 100%;
+  top: 182px;
 }
 
 .mainSection section {
@@ -78,7 +83,27 @@ body.landing.bg {
 }
 
 .mainSection.right section figure {
- margin-left: 430px;
+  margin-left: 430px;
+}
+
+.mainSection.center section nav {
+  margin-top: 70px;
+  font-size: 0;
+}
+
+.mainSection.center section nav a {
+  margin: 0 10px;
+}
+
+.mainSection.center footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.mainSection.center footer p {
+  font-size: 16px;
 }
 
 .mockup {
@@ -91,18 +116,25 @@ body.landing.bg {
   right: -116px;
   width: 732px;
   height: 660px;
-  background-image: url(../images/landing/wikimedium-mockup-1.jpg);
+  background-image: url(../images/landing/landing-mockup-1.jpg);
 }
+
 #mockup2 {
   top: 97px;
   left: 100px;
   width: 532px;
   height: 670px;
-  background-image: url(../images/landing/wikimedium-mockup-2.jpg);
+  background-image: url(../images/landing/landing-mockup-2.jpg);
 }
 
 #mockup3 {
-
+  top: 97px;
+  right: -732px;
+  width: 1348px;
+  height: 773px;
+  border-radius: 5px;
+  background-image: url(../images/landing/landing-mockup-3.jpg);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
 }
 
 @media screen and (max-width: 1460px) {
@@ -125,15 +157,18 @@ body.landing.bg {
     height: 568px;
   }
 
-  .mainSection h2 {
+  .mainSection  h2 {
     font-size: 26px;
     line-height: 32px;
   }
 
-  .mainSection p {
-    margin-top: 18px;
-    font-size: 18px;
-    line-height: 27px;
+  .mainSection.center h2{
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .mainSection  p {
+    margin-top: 21px;
   }
 
   .mainSection section {
@@ -149,6 +184,11 @@ body.landing.bg {
     right: 190px;
   }
 
+  .mainSection.center section {
+    width: 100%;
+    top: 182px;
+  }
+
   .mainSection section figure {
     width: 147px;
     height: 14px;
@@ -160,18 +200,39 @@ body.landing.bg {
   }
 
   .mainSection.right section figure {
-   margin-left: 303px;
+    margin-left: 303px;
+  }
+
+  .mainSection.center section nav {
+    margin-top: 50px;
+  }
+
+  .mainSection.center section nav a {
+    margin: 0 6px;
+  }
+
+  .mainSection.center footer p {
+    font-size: 12px;
   }
 
   #mockup1 {
-    right: 0;
+    top: 85px;
+    right: 0px;
     width: 521px;
     height: 470px;
   }
+
   #mockup2 {
     top: 70px;
     left: 148px;
     width: 380px;
     height: 478px;
+  }
+
+  #mockup3 {
+    top: 72px;
+    right: -444px;
+    width: 960px;
+    height: 555px;
   }
 }
