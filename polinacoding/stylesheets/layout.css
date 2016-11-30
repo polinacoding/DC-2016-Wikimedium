@@ -15,7 +15,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body.posts {
+body.posts,
+body.landing {
   background-color: #FAFAFA;
 }
 
@@ -25,6 +26,7 @@ body.landing .menubar {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
   min-width: 768px;
 }
 
